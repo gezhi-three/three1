@@ -64,6 +64,17 @@
             <li><cite></cite><a href="#" target="rightFrame">部门列表</a><i></i></li>
         </ul>
     </dd>
+    <dd>
+        <div class="title">
+            <span><img src="images/leftico02.png"/></span>员工管理
+        </div>
+        <ul class="menuson">
+            <li><cite></cite><a href="addjob.html" target="rightFrame">新增员工</a><i></i></li>
+            <li><cite></cite><a href="#" target="rightFrame">删除员工</a><i></i></li>
+            <li><cite></cite><a href="#" target="rightFrame">修改员工</a><i></i></li>
+            <li><cite></cite><a href="#" target="rightFrame">员工列表</a><i></i></li>
+        </ul>
+    </dd>
 </dl>
 </body>
 </html>
