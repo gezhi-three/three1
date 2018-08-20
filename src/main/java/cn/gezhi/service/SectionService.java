@@ -2,9 +2,10 @@ package cn.gezhi.service;
 
 import cn.gezhi.po.Section;
 import cn.gezhi.po.SectionExample;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface SectionService {
     //    新增部门
     int insert(Section section);

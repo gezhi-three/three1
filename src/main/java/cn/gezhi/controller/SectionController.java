@@ -84,8 +84,10 @@ public class SectionController {
     @RequestMapping("/mit")
     public String mit(Section section) {
         Integer sectionId = section.getSectionId();
+        System.out.println(sectionId);
         String sectionName = section.getSectionName();
-        sectionService.updateByPrimaryKey(section);
+        System.out.println(sectionName);
+        sectionService.updateByPrimaryKeySelective(section);
         return "forward:/Section/selectSectionAll";
     }
 }

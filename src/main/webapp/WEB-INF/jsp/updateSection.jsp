@@ -29,7 +29,7 @@
         <ul class="forminfo">
             <li>
                 <label>部门编号</label>
-                <input name="sectionId" type="text" class="dfinput" value="${section.sectionId}" disabled="disabled"/>
+                <input name="sectionId" type="text" class="dfinput" value="${section.sectionId}" readonly="readonly"/>
                 <i class="required">*</i>
             </li>
             <li>
