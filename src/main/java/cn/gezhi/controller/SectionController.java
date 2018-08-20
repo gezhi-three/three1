@@ -22,16 +22,11 @@ public class SectionController {
     public String addSection() {
         return "addSection";
     }
+
     //    新增部门具体操作
     @RequestMapping("/add")
     public String addSection(Section section) {
-        Integer sectionId = section.getSectionId();
-        String sectionName = section.getSectionName();
-        System.out.println("sectionId: " + sectionId);
-        System.out.println("sectionName: " + sectionName);
-        section.setSectionId(sectionId);
-        section.setSectionName(sectionName);
-        Section key = sectionService.selectByPrimaryKey(sectionId);
+        Section key = sectionService.selectByPrimaryKey(section.getSectionId());
         if (key == null) {
             sectionService.insert(section);
         }
@@ -40,10 +35,9 @@ public class SectionController {
 
     //    部门列表
     @RequestMapping("/selectSectionAll")
-
     public String selectSectionAll(Model model, SectionExample example) {
         List<Section> list = sectionService.selectByExample(example);
-        model.addAttribute("list",list);
+        model.addAttribute("list", list);
         return "selectSection";
     }
 
@@ -58,10 +52,10 @@ public class SectionController {
         int n = sectionService.deleteByPrimaryKey(i);
         String rs;
         if (n > 0) {
-            rs="forward:/Section/selectSectionAll";
+            rs = "forward:/Section/selectSectionAll";
             System.out.println("删除成功");
         } else {
-            rs="";
+            rs = "";
             System.out.println("删除失败");
         }
         return rs;
@@ -83,10 +77,6 @@ public class SectionController {
 
     @RequestMapping("/mit")
     public String mit(Section section) {
-        Integer sectionId = section.getSectionId();
-        System.out.println(sectionId);
-        String sectionName = section.getSectionName();
-        System.out.println(sectionName);
         sectionService.updateByPrimaryKeySelective(section);
         return "forward:/Section/selectSectionAll";
     }

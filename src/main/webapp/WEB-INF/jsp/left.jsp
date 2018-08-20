@@ -55,6 +55,24 @@
     </dd>
     <dd>
         <div class="title">
+            <span><img src="images/leftico02.png"/></span>用户管理
+        </div>
+        <ul class="menuson">
+            <li><cite></cite><a href="/Users/addUsers" target="rightFrame">新增用户</a><i></i></li>
+            <li><cite></cite><a href="/Users/selectUsersAll" target="rightFrame">用户列表</a><i></i></li>
+        </ul>
+    </dd>
+    <dd>
+        <div class="title">
+            <span><img src="images/leftico02.png"/></span>职位管理
+        </div>
+        <ul class="menuson">
+            <li><cite></cite><a href="/Position/addPosition" target="rightFrame">新增职位</a><i></i></li>
+            <li><cite></cite><a href="/Position/selectPositionAll" target="rightFrame">职位列表</a><i></i></li>
+        </ul>
+    </dd>
+    <dd>
+        <div class="title">
             <span><img src="images/leftico02.png"/></span>部门管理
         </div>
         <ul class="menuson">

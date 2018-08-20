@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>新增部门</title>
+    <title>新增职位</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
@@ -18,16 +18,22 @@
     <span>位置:</span>
     <ul class="placeul">
         <li><a href="index.html">首页</a></li>
-        <li><a href="addjob.html">部门列表</a></li>
+        <li><a href="addjob.html">职位管理</a></li>
     </ul>
 </div>
 
 <div class="formbody">
-    <div class="formtitle"><span>用户信息</span></div>
+    <div class="formtitle"><span>新增职位</span></div>
 
-    <form action="/Section/add" method="post">
+    <form action="/Position/add" method="post">
         <ul class="forminfo">
-            <li><label>部门名称</label><input name="sectionName" type="text" class="dfinput"/>
+            <li><label>职位名称</label><input name="positionName" type="text" class="dfinput"/>
+                <i class="required">*</i>
+            </li>
+            <li><label>职位权限</label><input name="sectionPermission" type="text" class="dfinput"/>
+                <i class="required">*</i>
+            </li>
+            <li><label>职位工资</label><input name="sectionSalary" type="text" class="dfinput"/>
                 <i class="required">*</i>
             </li>
             <li><label>&nbsp;</label><input name="" type="submit" class="btn" value="确认新增"/></li>
