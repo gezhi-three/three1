@@ -9,5 +9,8 @@
         <module name="three1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="three1" target="6" />
+    </bytecodeTargetLevel>
   </component>
 </project>
