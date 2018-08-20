@@ -58,10 +58,8 @@
             <span><img src="images/leftico02.png"/></span>部门管理
         </div>
         <ul class="menuson">
-            <li><cite></cite><a href="addjob.html" target="rightFrame">新增部门</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame">删除部门</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame">修改部门</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame">部门列表</a><i></i></li>
+            <li><cite></cite><a href="/Section/addSection" target="rightFrame">新增部门</a><i></i></li>
+            <li><cite></cite><a href="/Section/selectSectionAll" target="rightFrame">部门列表</a><i></i></li>
         </ul>
     </dd>
 </dl>

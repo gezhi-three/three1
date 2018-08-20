@@ -18,7 +18,7 @@ $(function(){
 
 </head>
 
-<body style="background:url(images/topbg.gif) repeat-x;">
+<body>
 
     <div class="topleft">
     <a href="main.html" target="_parent"><img src="images/logo.png" title="系统首页" /></a>
@@ -26,10 +26,10 @@ $(function(){
         
     <ul class="nav">
     <li><a href="default.html" target="rightFrame" class="selected"><img width="45px" height="45px" src="images/icon01.png" title="审批列表" /><h2>审批列表</h2></a></li>
-    <li><a href="imgtable.html" target="rightFrame"><img src="images/icon05.png" width="45px" height="45px" title="审批添加" /><h2>审批添加</h2></a></li>
-    <li><a href="imglist.html"  target="rightFrame"><img src="images/icon03.png" title="申请列表" /><h2>申请列表</h2></a></li>
-    <li><a href="tools.html"  target="rightFrame"><img src="images/icon04.png" title="客户列表" /><h2>客户列表</h2></a></li>
-    <li><a href="tab.html"  target="rightFrame"><img src="images/icon06.png" title="系统设置" /><h2>系统设置</h2></a></li>
+    <li><a href="/imgtable" target="rightFrame"><img src="images/icon05.png" width="45px" height="45px" title="审批添加" /><h2>审批添加</h2></a></li>
+    <li><a href="imglist.jsp"  target="rightFrame"><img src="images/icon03.png" title="申请列表" /><h2>申请列表</h2></a></li>
+    <li><a href="tools.jsp"  target="rightFrame"><img src="images/icon04.png" title="客户列表" /><h2>客户列表</h2></a></li>
+    <li><a href="tab.jsp"  target="rightFrame"><img src="images/icon06.png" title="系统设置" /><h2>系统设置</h2></a></li>
     </ul>
             
     <div class="topright">    
@@ -40,7 +40,7 @@ $(function(){
     </ul>
      
     <div class="user">
-    <span>${user.username}</span>
+    <span>${section.sectionName}</span>
     <i>申请消息</i>
     <b>5</b>
     </div>    
